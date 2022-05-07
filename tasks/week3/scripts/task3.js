@@ -65,7 +65,7 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-/* ARRAY METHODS */
+/* ARRAY Methods */
 
 // Step 1: Declare and instantiate an array variable to hold the numbers 1 through 25
 const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
