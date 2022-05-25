@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+    display: none;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    padding-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: #333;
+    display: none;
+}
+
+.name{
+    display: none;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+#startgame{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px 5px 20px ;
+}
+
+#play{
+    margin: 20px;
+}
