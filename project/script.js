@@ -68,13 +68,6 @@ function randomSelection() {
   return SELECTIONS[randomIndex];
 }
 
-let isGameOver = (score) => {
-  if (pScore === 3 || cScore === 3) {
-    return true;
-  }
-  return false;
-}
-
 let play = document.querySelector("#startgame");
 play.addEventListener("click", function () {
   let selection = document.querySelectorAll(".selection");
@@ -90,3 +83,9 @@ play.addEventListener("click", function () {
     item.style.display = "inline";
   });
 });
+
+let isGameOver = (score) => {
+  if (sumScore === 3) {
+    return true;
+  }
+}
