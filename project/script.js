@@ -45,6 +45,14 @@ function makeSelection(selection) {
 
   if (playerWinner) incrementScore(playerScore);
   if (computerWinner) incrementScore(computerScore);
+
+  const scoreNumber = Number(document.querySelector('.result-score').innerHTML)
+  console.log(scoreNumber);
+  if (scoreNumber === 3){
+    const message = document.querySelector("#finalwinner")
+    message.innerHTML = "you win"
+  }
+
 }
 
 function incrementScore(sumScore) {
@@ -84,8 +92,3 @@ play.addEventListener("click", function () {
   });
 });
 
-let isGameOver = (score) => {
-  if (sumScore === 3) {
-    return true;
-  }
-}
